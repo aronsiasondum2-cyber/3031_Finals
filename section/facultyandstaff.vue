@@ -67,7 +67,7 @@
                     <div class="facultytxt">
                         <p>Pedro Peter Rhys B. Cambronero, MSCS</p>
                         <div class = "image">
-                            <img src = "@/assets/image/Cambronero.jpg">
+                            <img src = "@/assets/image/cambronero.jpg">
                         </div>
                         <p>CS department</p>
                     </div>
