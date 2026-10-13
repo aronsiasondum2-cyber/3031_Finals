@@ -1,8 +1,5 @@
 <script setup lang="ts">
-
 import AppNavBar from '../component/AppNavBar.vue';
-import HomeView from './views/HomeView.vue';
-
 
 const scrollToSection = (id: string) => {
   document.getElementById(id)?.scrollIntoView({
@@ -14,8 +11,7 @@ const scrollToSection = (id: string) => {
 
 <template>
   <div>
-    <AppNavBar @navigate="scrollToSection"  />
-    
-    <HomeView/>
+    <AppNavBar @navigate="scrollToSection" />
+    <router-view />
   </div>
 </template>

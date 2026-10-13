@@ -1,34 +1,49 @@
 <template>
     <section id="program" class="program">
         <div class="container">
-            <div class ='leftcorner'>
-                <div><img src = '@/assets/image/ComSci.png'></div>
+            <div class='leftcorner'>
+                <div><img src='@/assets/image/ComSci.png'></div>
                 <div>
-                    <h1>Computer Science</h1> 
-                    <p>The Computer Science (CS) Program is designed for students who wants to study computing in depth, focusing in the software, the hardware</p></div>
+                    <h1>Computer Science</h1>
+                    <p>The Computer Science (CS) Program is designed for students who wants to study computing in depth,
+                        focusing in the software, the hardware</p>
+                    <div class="program-actions">
+                        <button type="button" class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
             </div>
 
-            <div class = 'midleft' >
-                <img src = '@/assets/image/ITSO.png'>
+            <div class='midleft'>
+                <img src='@/assets/image/ITSO.png'>
                 <div>
                     <h1> Information Technology</h1>
-                    <p>The Information Technology (IT) program is designed to bridge the gap between computer science and management information systems.</p>
+                    <p>The Information Technology (IT) program is designed to bridge the gap between computer science
+                        and management information systems.</p>
+                    <div class="program-actions">
+                        <router-link class="learn-more-btn" :to="{ name: 'bsit' }">Learn More</router-link>
+                    </div>
                 </div>
             </div>
             <div class="midright">
-                <img src = '@/assets/image/ARTS.png'>
+                <img src='@/assets/image/ARTS.png'>
                 <div>
                     <h1>Digital Media and Interactive Arts</h1>
-                    <p>The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity, applied arts and digital media technologies.</p>
+                    <p>The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity,
+                        applied arts and digital media technologies.</p>
+                    <div class="program-actions">
+                        <button type="button" class="learn-more-btn">Learn More</button>
+                    </div>
                 </div>
             </div>
-            <div class = 'rightcorner'>
-                <img src = '@/assets/image/LISSO.png'>
+            <div class='rightcorner'>
+                <img src='@/assets/image/LISSO.png'>
                 <div>
                     <h1>Library Information Science</h1>
-                    <p>The Degree of Bachelor of Library and Information Science (BLIS) is a four-year program that prepares students in the development
-
-</p>
+                    <p>The Degree of Bachelor of Library and Information Science (BLIS) is a four-year program that
+                        prepares students in the development</p>
+                    <div class="program-actions">
+                        <button type="button" class="learn-more-btn">Learn More</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,5 +122,27 @@
     .rightcorner {
         min-height: 0;
     }
+}
+
+.program-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-more-btn {
+  padding: 8px 16px;
+  border: 1px solid #183b2a;
+  background: transparent;
+  color: #183b2a;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background: #183b2a;
+  color: #fff;
 }
 </style>
