@@ -2,7 +2,7 @@
     <div class="menu">
         <div class="img-wrapper"><img src="@/assets/image/CSS.png" alt="cpu logo" /></div>
         <nav class="menu-items">
-            <a @click="$emit('navigate','hero')">Home</a>
+            <router-link :to="{ name: 'home' }">Home</router-link>
             <a @click="$emit('navigate','program')">Programs</a>
             <a @click="$emit('navigate','facultystaff')">Faculty</a>
             <a @click="$emit('navigate','member')">Partners</a>
