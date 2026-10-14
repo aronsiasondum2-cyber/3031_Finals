@@ -11,7 +11,7 @@
                     <h1>REMEMBER CONNECT ENGAGE BUILD SHARE</h1>
                     <h2>different PEOPLE, ONE goal</h2>
                      <div class = "btn">
-                    <button>YOUR future begins here</button>
+                    <a class="hero-cta" href="#program">YOUR future begins here</a>
                 </div>
                 </div>
 
@@ -72,7 +72,8 @@
     margin-top: 24px;
 }
 
-button {
+.hero-cta {
+    display: inline-block;
     border: 0;
     border-radius: 4px;
     padding: 12px 20px;
@@ -80,6 +81,7 @@ button {
     color: #183b2a;
     font: inherit;
     font-weight: 600;
+    text-decoration: none;
 }
 
 @media (max-width: 640px) {
