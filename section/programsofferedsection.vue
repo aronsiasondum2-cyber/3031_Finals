@@ -31,7 +31,7 @@
                     <p>The Degree of Bachelor of Science in Digital Media and Interactive Arts is focused on creativity,
                         applied arts and digital media technologies.</p>
                     <div class="program-actions">
-                        <button type="button" class="learn-more-btn">Learn More</button>
+                        <router-link class="learn-more-btn" :to="{ name: 'bsdmia' }">Learn More</router-link>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <p>The Degree of Bachelor of Library and Information Science (BLIS) is a four-year program that
                         prepares students in the development</p>
                     <div class="program-actions">
-                        <button type="button" class="learn-more-btn">Learn More</button>
+                        <router-link class="learn-more-btn" :to="{ name: 'blis' }">Learn More</router-link>
                     </div>
                 </div>
             </div>
